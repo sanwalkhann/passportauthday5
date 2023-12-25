@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style media="screen">
+      body {
+        background-color: #080710;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        padding: 20px;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .social button {
+        background-color: #ffffff;
+        color: #080710;
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .social .home {
+        background-color: #3b5998; 
+    }
+    
+    .social .register {
+        background-color: #e4405f; 
+    }
+    
+    .social .login {
+        background-color: #1da1f2; 
+    }
+    
+    .social button i {
+        margin-right: 8px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .social {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .social button {
+            width: 100%;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <h2>Welcome to the Home Page</h2>
+    <div class="social">
+        <button class="home" onclick="window.location.href='/'"><i class="fas fa-home"></i> Home</button>
+        <button class="register" onclick="window.location.href='/register'"><i class="fas fa-user-plus"></i> Register</button>
+        <button class="login" onclick="window.location.href='/login'"><i class="fas fa-sign-in-alt"></i> Login</button>
+    </div>
+</body>
+</html>

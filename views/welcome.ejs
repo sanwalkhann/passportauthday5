@@ -1,0 +1,57 @@
+<!-- views/welcome.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style media="screen">
+      body {
+        background-color: #080710;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+
+      .logout-btn {
+        background-color: #1da1f2; /* Twitter Blue */
+        color: #ffffff;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .logout-btn:hover {
+        background-color: #0d88c3; /* Darker shade on hover */
+      }
+
+      .logout-btn i {
+        margin-right: 10px;
+      }
+    </style>
+</head>
+<body>
+    <h2>Welcome, <%= username %>!</h2>
+    <p>Thank you for logging in. Enjoy your time on our platform.</p>
+    <button class="logout-btn" onclick="window.location.href='/'">
+      <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+</body>
+</html>
